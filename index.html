@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
     <div>
@@ -15,23 +18,28 @@
     </div>
 
     <div class="keys">
-        <div class="box"></div>
+        <div class="box">
+            <form action="">
+                <input type="text" name="value">
+            </form>
+        </div>
         <ul style="list-style-type: none;" class="nums">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>+</li>
-            <li>0</li>
-            <li>-</li>
-            <li>*</li>
-            <li>/</li>
-            <li>=</li>
+            <li onclick="appendNumber('1')">1</li>
+            <li onclick="appendNumber('2')">2</li>
+            <li onclick="appendNumber('3')">3</li>
+            <li onclick="appendNumber('4')">4</li>
+            <li onclick="appendNumber('5')">5</li>
+            <li onclick="appendNumber('6')">6</li>
+            <li onclick="appendNumber('7')">7</li>
+            <li onclick="appendNumber('8')">8</li>
+            <li onclick="appendNumber('9')">9</li>
+            <li onclick="appendNumber('0')">0</li>            
+            <li onclick="appendOperator('+')">+</li>
+            <li onclick="appendOperator('-')">-</li>
+            <li onclick="appendOperator('*')">*</li>
+            <li onclick="appendOperator('/')">/</li>
+            <li onclick="calculateResult()">=</li>
+            <li>AC</li>
         </ul>
     </div>
 

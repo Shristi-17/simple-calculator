@@ -4,8 +4,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 :root{
-    --body:#008FA6;
-    --bg:#E7FFFC;
+    --body:crimson;
+    --bg:beige;
 }
 body {
     background-color: var(--body);
@@ -22,26 +22,40 @@ nav{
     box-shadow: 2px 2px 10px;
     background-color: var(--bg);
 }
-.box{
-    margin-top: 40px;
-    margin-bottom: 20px;
-    /* border: 2px solid black; */
-    height: 50px;
-    width: 257px;
-    display: flex;
-    border-radius: 15px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.412);
-    background-color: var(--bg);
-}
 .keys{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+/* .box{
+    display: grid;
+    grid-template-columns: 350px;
+    margin-top: 85px;
+    margin-bottom: 25px;
+    border: 2px solid black;
+    height: 55px;
+    width: 350px;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.412);
+    background-color: var(--bg);
+} */
+ input{
+    margin-top: 85px;
+    margin-bottom: 25px;
+    border: none;
+    height: 55px;
+    width: 350px;
+    /* display: flex; */
+    
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.412);
+    background-color: var(--bg);
+}
 .nums{
     display: grid;
-    grid-template-columns: 90px 90px 90px;
+    grid-template-columns: 90px 90px 90px 90px;
     grid-template-rows: 90px 90px 90px 90px 90px;
 }
 .nums li{
@@ -56,7 +70,12 @@ nav{
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.412);
     background-color: var(--bg);
 }
-
+li:hover{
+    cursor: pointer;
+}
+li:active{
+    transform: scale(0.97);
+}
 .foot{
     width: 100%;
     display: flex;
